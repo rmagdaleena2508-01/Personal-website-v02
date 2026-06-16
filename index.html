@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R. Magdaleena | AI Engineer</title>
+    <meta
+      name="description"
+      content="R. Magdaleena is a B.Tech CSE student and AI engineer in Chennai, building applied AI, Flutter apps, startup ideas, and open-source software."
+    />
+    <meta name="author" content="R. Magdaleena" />
+    <meta property="og:title" content="R. Magdaleena | AI Engineer" />
+    <meta
+      property="og:description"
+      content="Smooth 3D portfolio for an AI engineer learning by shipping."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="space" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-meter" aria-hidden="true"><span></span></div>
+    <aside class="scroll-orbit" aria-label="Page progress">
+      <span data-orbit-label>Home</span>
+      <i></i>
+    </aside>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="R. Magdaleena home">R.M</a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#ideas">Ideas</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero panel" data-depth="1.2">
+        <div class="hero-media" aria-hidden="true">
+          <img src="./assets/intro-bg.jpeg" alt="" />
+        </div>
+        <div class="hero-copy">
+          <p class="kicker">AI engineer intern | Chennai</p>
+          <h1 class="typewriter" data-type-text="R. Magdaleena" aria-label="R. Magdaleena">
+            <span data-type-target aria-hidden="true"></span>
+          </h1>
+          <p
+            class="hero-line typewriter subline"
+            data-type-text="I build things to solve real problems."
+            aria-label="I build things to solve real problems."
+          >
+            <span data-type-target aria-hidden="true"></span>
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Explore builds</a>
+            <a class="button ghost" href="mailto:rmagdaleenawork@gmail.com">Start a conversation</a>
+          </div>
+          <div class="hero-stats" aria-label="Portfolio highlights">
+            <span><strong data-count="3">0</strong> internships</span>
+            <span><strong data-count="3">0</strong> shipped projects</span>
+          </div>
+        </div>
+        <aside class="mission-orbit" aria-label="Current focus">
+          <span>2026</span>
+          <strong>Learning by shipping</strong>
+          <p>Applied AI, Flutter, product experiments, and open-source work.</p>
+        </aside>
+      </section>
+
+      <section id="work" class="section panel">
+        <div class="section-head">
+          <p class="kicker">experience</p>
+          <h2>Where I am building</h2>
+        </div>
+        <div class="timeline">
+          <article class="tilt-card depth-card">
+            <span class="date">May - Present 2026</span>
+            <h3>AI Engineer Intern</h3>
+            <p class="place">Upstride</p>
+            <p>
+              Building applied AI features end-to-end, from prompt design and evaluation to product surfaces customers actually use.
+            </p>
+          </article>
+          <article class="tilt-card depth-card">
+            <span class="date">May - Present 2026</span>
+            <h3>Applied AI Engineer</h3>
+            <p class="place">Single Core Labs</p>
+            <p>
+              Working on voice agents and data pipelines, shipping pieces of a real-time conversational system and the evaluation tooling around it.
+            </p>
+          </article>
+          <article class="tilt-card depth-card">
+            <span class="date">Jan - April 2026</span>
+            <h3>Flutter App Developer Intern</h3>
+            <p class="place">UNLOX</p>
+            <p>
+              Built Smart-Interest-X as a production-style fintech app for loan and interest management.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split panel">
+        <div class="section-head">
+          <p class="kicker">open source</p>
+          <h2>First merge, real flow</h2>
+        </div>
+        <article class="feature tilt-card depth-card">
+          <div>
+            <span class="status">Merged PR #170</span>
+            <h3>Checkora forgot-password flow</h3>
+            <p>
+              Implemented the complete Django password-reset request view, token validation, email templates, URL routing, and lint fixes through GirlScript Summer of Code.
+            </p>
+          </div>
+          <a class="button ghost" href="https://github.com/Checkora/Checkora/pull/170" target="_blank" rel="noopener noreferrer">View PR</a>
+        </article>
+      </section>
+
+      <section id="projects" class="section panel">
+        <div class="section-head row">
+          <div>
+            <p class="kicker">projects</p>
+            <h2>Things I have built</h2>
+          </div>
+          <div class="filters" aria-label="Project filters">
+            <button class="active" type="button" data-filter="all">All</button>
+            <button type="button" data-filter="ai">AI</button>
+            <button type="button" data-filter="app">Apps</button>
+            <button type="button" data-filter="web">Web</button>
+          </div>
+        </div>
+        <div class="project-grid">
+          <article class="project tilt-card depth-card" data-tags="app">
+            <img src="./assets/smart-interest-x.png" alt="Smart-Interest-X app preview" />
+            <div class="project-body">
+              <span class="status">Flutter | Supabase | PostgreSQL</span>
+              <h3>Smart-Interest-X</h3>
+              <p>
+                A fintech app for informal lending that automates simple-interest calculations, tracks payment proof, sends due-date reminders, and shows real-time receivables.
+              </p>
+              <a href="https://github.com/rmagdaleena2508-01/Smart-Interest-X" target="_blank" rel="noopener noreferrer">Code -></a>
+            </div>
+          </article>
+          <article class="project tilt-card depth-card" data-tags="ai">
+            <img src="./assets/inextlabs.jpeg" alt="iNextLabs chatbot preview" />
+            <div class="project-body">
+              <span class="status">Python | FastAPI | LLM | RAG</span>
+              <h3>iNextLabs Chatbot</h3>
+              <p>
+                A support assistant covering intent handling, retrieval over product context, and a clean handoff path when confidence drops.
+              </p>
+              <a href="https://github.com/rmagdaleena2508-01/inextlabs-support-bot" target="_blank" rel="noopener noreferrer">Code -></a>
+            </div>
+          </article>
+          <article class="project tilt-card depth-card wide" data-tags="web">
+            <img src="./assets/porsche.png" alt="Porsche engineering dreams landing page preview" />
+            <div class="project-body">
+              <span class="status">React | Vite | Tailwind | AI orchestration</span>
+              <h3>Porsche | Engineering Dreams</h3>
+              <p>
+                A five-page luxury automotive showcase with dark glassmorphism, route animations, and an honest README about prompt engineering and AI tool chaining.
+              </p>
+              <a href="https://porsche-landing-page-five.vercel.app/" target="_blank" rel="noopener noreferrer">Live -></a>
+              <a href="https://github.com/rmagdaleena2508-01/Porsche-Landing-Page" target="_blank" rel="noopener noreferrer">Code -></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="ideas" class="section panel">
+        <div class="section-head">
+          <p class="kicker">startup ideas</p>
+          <h2>Ideas in motion</h2>
+        </div>
+        <div class="idea-grid">
+          <article class="idea tilt-card depth-card">
+            <img src="./assets/campus-connect.png" alt="Campus Connect concept visual" />
+            <div>
+              <span class="status">Initially Campus Circle</span>
+              <h3>Campus Connect</h3>
+              <p>
+                A student-focused social discovery platform for finding compatible friends, teammates, and project collaborators through interest-based matching.
+              </p>
+            </div>
+          </article>
+          <article class="idea tilt-card depth-card">
+            <img src="./assets/problembase.png" alt="ProblemBase concept visual" />
+            <div>
+              <span class="status">Search engine for unsolved problems</span>
+              <h3>ProblemBase</h3>
+              <p>
+                Search a product and surface real pain ranked by severity, connecting builders with unresolved software problems already scattered across the internet.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="section panel">
+        <div class="section-head">
+          <p class="kicker">stack</p>
+          <h2>What I work with</h2>
+        </div>
+        <div class="stack-cloud" aria-label="Technology stack">
+          <span>Python</span><span>Dart</span><span>JavaScript</span><span>Flutter</span><span>FastAPI</span>
+          <span>Supabase</span><span>PostgreSQL</span><span>Git</span><span>Vercel</span><span>Cursor</span>
+          <span>Claude Code</span><span>Google Stitch</span><span>Jules</span><span>HTML</span><span>CSS</span>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section panel">
+        <p class="kicker">contact</p>
+        <h2>Let us build something useful.</h2>
+        <div class="contact-links">
+          <a href="mailto:rmagdaleenawork@gmail.com">rmagdaleenawork@gmail.com</a>
+          <a href="https://www.linkedin.com/in/rmagdaleena-aiengineer" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/rmagdaleena2508-01" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 R. Magdaleena</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
